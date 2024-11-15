@@ -1,0 +1,394 @@
+:root {
+    --primary: #1a73e8;
+    --text: #1f2937;
+    --background: #ffffff;
+    --gray-light: #f3f4f6;
+    --gray: #6b7280;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--background);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Navbar */
+.navbar {
+    background: var(--background);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: var(--primary);
+}
+
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10PX; 
+    font-size: 25px; 
+    transition: color 0.3s, transform 0.3s; 
+  }
+
+  .social-links a:hover {
+    color: #25d366; 
+    transform: scale(1.2); /* Aumenta el tamaño del icono al 120% */
+  }
+  
+  .whatsapp{
+    color: #000000;
+  }
+
+  .facebook{
+    color: #000000;
+  }
+
+  .instagram{
+    color: #000000;
+  }
+
+  .tiktok{
+    color: #000000;
+  }
+
+  /* Efectos hover específicos para cada red social */
+  .social-links .whatsapp:hover {
+    color: #25d366; /* Color verde para WhatsApp */
+  }
+  
+  .social-links .facebook:hover {
+    color: #1877f2; /* Color azul para Facebook */
+  }
+  
+  .social-links .instagram:hover {
+    color: #e4405f; /* Color rosa para Instagram */
+  }
+  
+  .social-links .tiktok:hover {
+    color: #000000; /* Color negro para TikTok */
+  }
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?auto=format&fit=crop&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 8rem 0 4rem;
+    margin-bottom: 2rem;
+}
+
+.glossary-hero {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1507919909716-c8262e491cde?auto=format&fit=crop&q=80');
+}
+
+.article-meta {
+    margin-bottom: 1rem;
+}
+
+.category {
+    background: var(--primary);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    margin-right: 1rem;
+}
+
+.date {
+    color: #e5e7eb;
+    font-size: 0.875rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    max-width: 800px;
+}
+
+.lead {
+    font-size: 1.25rem;
+    max-width: 600px;
+    color: #e5e7eb;
+}
+
+/* Article Content */
+.article-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.article-body {
+    font-size: 1.125rem;
+}
+
+.article-body h2 {
+    font-size: 1.875rem;
+    margin: 2rem 0 1rem;
+    color: var(--text);
+}
+
+.article-body p {
+    margin-bottom: 1.5rem;
+}
+
+.disciplines-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.discipline-card {
+    background: var(--gray-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.discipline-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Info Boxes */
+.info-box {
+    background: var(--gray-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.info-box.warning {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+}
+
+.quote-box {
+    border-left: 4px solid var(--primary);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: var(--gray);
+}
+
+/* Sidebar */
+.sidebar-box {
+    background: var(--gray-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    position: sticky;
+    top: 80px;
+    margin-bottom: 2rem;
+}
+
+.related-news {
+    margin-top: 2rem;
+}
+
+.news-card {
+    background: var(--gray-light);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.news-card h4 {
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 1100;
+}
+
+.modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: var(--background);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.modal-content img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+/* Glossary */
+.glossary-section {
+    padding: 2rem 0;
+}
+
+.glossary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+.glossary-item {
+    background: var(--background);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+}
+
+.glossary-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.glossary-item.expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    z-index: 1000;
+    cursor: default;
+    overflow-y: auto;
+}
+
+/* Footer */
+.footer {
+    background: var(--text);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .article-content {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .glossary-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Table of contents */
+
+.table-of-contents {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.table-of-contents h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+.table-of-contents ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.table-of-contents li {
+    margin-bottom: 10px;
+}
+.table-of-contents a {
+    color: #007bff;
+    text-decoration: none;
+}
+.table-of-contents a:hover {
+    text-decoration: underline;
+}
