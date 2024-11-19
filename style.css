@@ -337,6 +337,11 @@ body {
     overflow-y: auto;
 }
 
+.glossary-image{
+    display: flke;
+}
+
+
 /* Footer */
 .footer {
     background: var(--text);
