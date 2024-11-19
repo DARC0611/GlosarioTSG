@@ -17,7 +17,7 @@ const glossaryItems = [
     {
         title: 'Variable',
         description: 'Un espacio en memoria al que se le asigna un nombre y que almacena un valor que puede cambiar durante la ejecución de un programa.',
-        image: 'variable.png'
+        image: 'Variable.png'
     },
     {
         title: 'Identificadores',
@@ -27,17 +27,17 @@ const glossaryItems = [
     {
         title: 'Concatenar',
         description: 'Operación que une dos o más cadenas de texto o datos en una sola.',
-        image: 'concatenar.png'
+        image: 'Concatenar.png'
     },
     {
         title: 'Compilar',
         description: 'Proceso de traducir un código fuente escrito en un lenguaje de programación de alto nivel a un lenguaje de máquina entendible por un ordenador.',
-        image: 'compilar.png'
+        image: 'Compilar.png'
     },
     {
         title: 'Header',
         description: 'En programación, es un archivo que contiene definiciones, declaraciones o bibliotecas compartidas que pueden ser incluidas en otros archivos. En diseño web, es la parte superior de una página.',
-        image: 'header.png'
+        image: 'Header.png'
     },
     {
         title: 'Main',
@@ -57,12 +57,12 @@ const glossaryItems = [
     {
         title: 'Repositorio',
         description: 'Almacén digital donde se guardan archivos, proyectos y su historial de cambios, como en sistemas de control de versiones así como GitHub.',
-        image: 'repositorio.png'
+        image: 'Repositorio.png'
     },
     {
         title: 'Algoritmo',
         description: 'Conjunto finito de pasos ordenados y definidos que resuelven un problema o realizan una tarea específica.',
-        image: 'algoritmo.png'
+        image: 'Algoritmo.png'
     },
     {
         title: 'Constante',
@@ -72,22 +72,22 @@ const glossaryItems = [
     {
         title: 'Entrada',
         description: 'Información o datos proporcionados a un programa o sistema, ya sea desde el teclado, un archivo o sensores.',
-        image: 'entrada.png'
+        image: 'Entrada.png'
     },
     {
         title: 'Salida',
         description: 'Información generada o producida por un programa o sistema, como resultados en pantalla, archivos o señales.',
-        image: 'salida.png'
+        image: 'Salida.png'
     },
     {
         title: 'Programación',
         description: 'Proceso de diseñar, escribir y mantener código para crear aplicaciones, sistemas o software.',
-        image: 'programacion.jpg'
+        image: 'Programacion.jpg'
     },
     {
         title: 'Implantación',
         description: 'Proceso de poner un sistema, aplicación o software en funcionamiento en un entorno real de uso.',
-        image: 'implantacion.png'
+        image: 'Implantacion.png'
     },
     {
         title: 'Expresiones lógicas',
