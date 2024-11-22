@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- <meta http-equiv="content-type" content="text/html"; charset="utf-8"> -->
+    <meta http-equiv="content-type" content="text/html"; charset="iso-8859-1"> 
+    <meta name="description" content="Ejercicios para validación de datos">
+    <meta name="keyworks" content="validar campos, expresiones regulares">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>EJERCICIO VALIDADOR DATOS FORMULARIO</title>
+
+    <style type="text/css">
+        body {background-color:lightcyan; font-family: sans-serif;}
+        label {color: maroon; display:block; padding:5px;}
+	    input {margin:10px;}
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="funciones_validacion.js"></script>    
+
+</head>
+<body>
+    <h2>Formulario: DATOS PERSONALES</h2><hr><br>
+    <! ----------------------------------------- --!>  
+    <form id="miniformulario" name="miniformulario" class="formulario" method="get" onsubmit="return validarDatos()" action="pagina2.html" >
+        
+        <label for="nombre">Nombre...</label>   
+        <input type="text" id="nombre" name="nombre" placeholder="ingrese el Nombre..." /><img width="20" height="20"  style='visibility: hidden;' /><br/>
+            
+        <label for="apellido">Apellidos</label>
+        <input type="text" id="apellido" name="apellido" placeholder="ingrese el Apellido..."/><img width="20" height="20"  style='visibility: hidden;' /><br/>
+        
+        
+        
+        
+
+        <hr>       
+          
+        
+        <!--- ----------------------------------------- 
+        ---  Botones de comando para el formulario  --> 
+        <input type="submit"  value="Enviar..." />
+        
+        <!- input type="reset" value="Reiniciar datos" />   
+        <input type="button" value="Reiniciar datos" onclick="resetearDatos()">
+    </form>
+</body>
+    
+</html>
